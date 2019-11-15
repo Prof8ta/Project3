@@ -21,7 +21,7 @@ import EditExercise from './components/edit-exercise.component';
 
 
 
-if(localStorage.jwtToken){
+if (localStorage.jwtToken) {
     const token = localStorage.jwtToken;
     setAuthToken(token);
 
@@ -29,7 +29,7 @@ if(localStorage.jwtToken){
     store.dispatch(setCurrentUser(decoded));
 
     const currentTime = Date.now() / 1000;
-    if(decoded.exp < currentTime){
+    if (decoded.exp < currentTime) {
         store.dispatch(logoutUser());
         window.location.href = "./login";
     }
@@ -37,7 +37,7 @@ if(localStorage.jwtToken){
 
 class App extends Component {
     render() {
-        return(
+        return (
             <Provider store={store}>
                 <Router>
                     <div className="App">
@@ -46,12 +46,12 @@ class App extends Component {
                         <Route exact path="/register" component={Register} />
                         <Route exact path="/login" component={Login} />
                         <Switch>
+
                             <PrivateRoute exact path="/dashboard" component={Dashboard} />
                             <PrivateRoute exact path="/create_user" component={CreateUser} />
                             <PrivateRoute exact path="/create_exercise" component={CreateExercise} />
                             <PrivateRoute exact path="/exercise_list" component={ExerciseList} />
                             <PrivateRoute exact path="/components" component={EditExercise} />
-
 
                         </Switch>
                     </div>

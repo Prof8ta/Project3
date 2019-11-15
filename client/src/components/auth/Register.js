@@ -18,13 +18,13 @@ class Register extends Component {
     }
 
     componentDidMount() {
-        if(this.props.auth.isAuthenticated) this.props.history.push("/dashboard");
+        if (this.props.auth.isAuthenticated) this.props.history.push("/dashboard");
     }
 
     componentWillReceiveProps(nextProps) {
-        if(nextProps.auth.isAuthenticated) this.props.history.push("/dashboard");
-        
-        if(nextProps.errors){
+        if (nextProps.auth.isAuthenticated) this.props.history.push("/dashboard");
+
+        if (nextProps.errors) {
             this.setState({
                 errors: nextProps.errors
             });
@@ -61,9 +61,9 @@ class Register extends Component {
                         </Link>
                         <div className="col s12" style={{ paddingLeft: "11.250px" }}>
                             <h4>
-                                <b>Register</b> below
+                                <b>Register Below</b>
                             </h4>
-                            <p className="grey-text text-darken-1">
+                            <p className="grey-text text-darken-5">
                                 Already have an account? <Link to="/login">Login</Link>
                             </p>
                         </div>

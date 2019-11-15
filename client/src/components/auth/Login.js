@@ -16,13 +16,13 @@ class Login extends Component {
     }
 
     componentDidMount() {
-        if(this.props.auth.isAuthenticated) this.props.history.push("/create_user");
+        if (this.props.auth.isAuthenticated) this.props.history.push("/create_user");
     }
 
     componentWillReceiveProps(nextProps) {
-        if(nextProps.auth.isAuthenticated) this.props.history.push("/create_user");
+        if (nextProps.auth.isAuthenticated) this.props.history.push("/create_user");
 
-        if(nextProps.errors){
+        if (nextProps.errors) {
             this.setState({
                 errors: nextProps.errors
             });
@@ -57,9 +57,9 @@ class Login extends Component {
                         </Link>
                         <div className="col s12" style={{ paddingLeft: "11.250px" }}>
                             <h4>
-                                <b>Login</b> below
+                                <b>Login Below</b>
                             </h4>
-                            <p className="grey-text text-darken-1">
+                            <p className="grey-text text-darken-5">
                                 Don't have an account? <Link to="/register">Register</Link>
                             </p>
                         </div>

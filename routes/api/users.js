@@ -9,6 +9,12 @@ const validateLoginInput = require('../../validation/login');
 
 const User = require('../../models/User');
 
+router.route('/').get((req, res) => {
+    User.find()
+        .then(users => res.json(users))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
 router.post('/register', (req, res) => {
     const { errors, isValid } = validateRegisterInput(req.body);
 

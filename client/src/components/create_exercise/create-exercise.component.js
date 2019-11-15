@@ -16,7 +16,7 @@ export default class CreateExercises extends Component {
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
-            username: '',
+            id: '',
             description: '',
             duration: 0,
             date: new Date(),
@@ -25,7 +25,20 @@ export default class CreateExercises extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/users/')
+        if (this.props.match.params.id) {
+            const id = this.props.match.params.id;
+
+            axios.get(`/api/exercises/${id}`)
+                .then(({ data: exerciseData }) => {
+                    this.setState({
+                        id: exerciseData.id,
+                        description: exerciseData.description,
+                        duration: exerciseData.duration,
+                    })
+                })
+        }
+
+        axios.get('api/users/')
             .then(response => {
                 if (response.data.length > 0) {
                     this.setState({
@@ -76,7 +89,7 @@ export default class CreateExercises extends Component {
 
         console.log(exercise);
 
-        axios.post('http://localhost:5000/exercises/add', exercise)
+        axios.post('http://localhost:5000/exercises/register', exercise)
             .then(res => console.log(res.data));
 
         window.location = '/';

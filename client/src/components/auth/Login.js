@@ -16,11 +16,11 @@ class Login extends Component {
     }
 
     componentDidMount() {
-        if(this.props.auth.isAuthenticated) this.props.history.push("/create_user");
+        if(this.props.auth.isAuthenticated) this.props.history.push("/create_exercise");
     }
 
     componentWillReceiveProps(nextProps) {
-        if(nextProps.auth.isAuthenticated) this.props.history.push("/create_user");
+        if(nextProps.auth.isAuthenticated) this.props.history.push("/create_exercise");
 
         if(nextProps.errors){
             this.setState({
@@ -87,7 +87,7 @@ class Login extends Component {
                                     letterSpacing: "1.5px",
                                     marginTop: "1rem"
                                 }} type="submit">
-                                    Login
+                                   Login
                                 </button>
                             </div>
                         </form>

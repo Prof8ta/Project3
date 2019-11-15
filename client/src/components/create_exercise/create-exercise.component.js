@@ -97,7 +97,7 @@ export default class CreateExercises extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
                 <h3>Time To Get Sweating!</h3>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
@@ -118,7 +118,7 @@ export default class CreateExercises extends Component {
                         </select>
                     </div>
                     <div className="form-group">
-                        <label>Exercise you want to get sweaty with: </label>
+                        <label>Exercise You Want to Get Sweaty With: </label>
                         <input type="text"
                             required
                             className="form-control"
@@ -127,7 +127,7 @@ export default class CreateExercises extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>For how much time (in minutes): </label>
+                        <label>How Long (in minutes): </label>
                         <input
                             type="text"
                             className="form-control"

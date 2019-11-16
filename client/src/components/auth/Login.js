@@ -60,7 +60,7 @@ class Login extends Component {
                             <h4>
                                 <b>Login Below</b>
                             </h4>
-                            <p className="grey-text text-darken-5">
+                            <p className="grey-text text-lighten-1">
                                 Don't have an account? <Link to="/register">Register</Link>
                             </p>
                         </div>

@@ -26,6 +26,7 @@ class Navbar extends Component {
     // }
     render() {
         return (
+
             <div className="container">
                 <div className="topheader">
                     <div className="navbar-navbar-dark bd-dark navbar-expand-lg">
@@ -40,9 +41,9 @@ class Navbar extends Component {
                                             <Link to="/" className="nav-link">Home</Link>
                                         </li>
 
-                                        <li className="navbar-item">
+                                        {/* <li className="navbar-item">
                                             <Link to="/create_user" className="nav-link">Create New Sweater</Link>
-                                        </li>
+                                        </li> */}
 
                                         <li className="navbar-item">
                                             <Link to="/create_exercise" className="nav-link">Create a Sweat!</Link>

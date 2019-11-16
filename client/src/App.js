@@ -18,6 +18,7 @@ import CreateUser from './components/create_user/create-user.component';
 import CreateExercise from './components/create_exercise/create-exercise.component';
 import ExerciseList from './components/exercise_list/exercise-list.component';
 import EditExercise from './components/edit-exercise.component';
+import Footer from './components/layout/Footer';
 
 
 
@@ -54,6 +55,7 @@ class App extends Component {
                             <PrivateRoute exact path="/components" component={EditExercise} />
 
                         </Switch>
+                        <Footer/>
                     </div>
                 </Router>
             </Provider>

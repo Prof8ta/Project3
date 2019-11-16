@@ -101,7 +101,7 @@ export default class CreateExercises extends Component {
                 <h3>Time To Get Sweating!</h3>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
-                        <label>Username: </label>
+                        {/* <label>Username: </label> */}
                         <select ref="userInput"
                             required
                             className="form-control"

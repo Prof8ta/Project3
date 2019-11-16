@@ -14,7 +14,7 @@ import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import PrivateRoute from './components/private-route/PrivateRoute';
 import Dashboard from './components/dashboard/Dashboard';
-import CreateUser from './components/create_user/create-user.component';
+// import CreateUser from './components/create_user/create-user.component';
 import CreateExercise from './components/create_exercise/create-exercise.component';
 import ExerciseList from './components/exercise_list/exercise-list.component';
 import EditExercise from './components/edit-exercise.component';

@@ -17,8 +17,8 @@ class Dashboard extends Component {
                 <div className="row">
                     <div className="col s12 center-align">
                         <h4>
-                            <b>Hey there,</b> {user.name.split(" ")[0]}!
-                            <p className="flow-text grey-text text-darken-5">
+                            <b>Hey there,</b> {user.name.split(" ")[0]}
+                            <p className="flow-text grey-text text-lighten-2">
                                 Would you like to logout?{" "} <span style={{ fontFamily: "monospace" }}></span>
                             </p>
                         </h4>

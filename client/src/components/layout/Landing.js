@@ -10,7 +10,7 @@ class Landing extends Component {
                         <h4>
                             <b>Sweat 💦</b>
                         </h4>
-                        <p className="flow-text grey-text text-darken-5">
+                        <p className="flow-text grey-text text-lighten-2">
                             Let's Get Sweaty!
                         </p>
                         <br />

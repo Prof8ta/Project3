@@ -59,6 +59,10 @@ body {
   justify-content: center;
   margin-top: 50px;
   overflow-x: hidden;
+  background-image: url("https://image.freepik.com/free-photo/fitness-exercise-working-out-healthy-lifestyle-background-concept_47840-274.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .container {
@@ -71,7 +75,7 @@ body {
 }
 
 label {
-    color:rgb(32, 192, 144);
+    color: #b2dfdb  ;
     font-size: 17px;
 }
 
@@ -79,8 +83,25 @@ input {
     color: white;
 }
 
+
+
 th {
-    color: rgb(32, 192, 144)
+    color: #b2dfdb
+}
+
+footer {
+	min-height: 120px;
+  margin-left: 80px;
+	
+	box-sizing: border-box;
+}
+footer p {
+	color: #FFFFFF;
+	margin: 20px 0 0 0;
+}
+.socialIcons {
+	font-size: 45px;
+	color: rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 55em) {

@@ -63,7 +63,7 @@ class Register extends Component {
                             <h4>
                                 <b>Register Below</b>
                             </h4>
-                            <p className="grey-text text-darken-5">
+                            <p className="grey-text text-lighten-1">
                                 Already have an account? <Link to="/login">Login</Link>
                             </p>
                         </div>
